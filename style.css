@@ -1,0 +1,239 @@
+/* Ajustes globais */
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* header */
+.container {
+  width: 100%;
+}
+
+.all {
+  background-color: rgb(211, 219, 232);
+  width: 100%;
+}
+
+header {
+  background: url("./images/cover.jpeg") no-repeat center center;
+  background-size: cover;
+  min-height: 60vh; /* altura proporcional */
+  filter: grayscale(50%);
+  width: 100%;
+}
+
+.heading {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 20vh; /* relativo à tela */
+}
+
+.heading h1 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+}
+
+.heading h2 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+/* Seções de texto e imagem (história, casamento etc.) */
+.two {
+  max-width: 800px;   /* largura máxima agradável */
+  margin: 0 auto;     /* centraliza horizontalmente */
+  padding: 20px;
+  text-align: center; /* centraliza o texto */
+}
+
+/* Centraliza a imagem dentro das seções */
+.two img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto; /* centraliza a imagem */
+  border-radius: 10px; /* opcional: arredondar cantos */
+}
+
+
+/* conteúdo em colunas */
+.content {
+  display: flex;
+  flex-wrap: wrap; /* quebra linha no mobile */
+  gap: 20px;
+  justify-content: center;
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.content > div {
+  flex: 1 1 300px; /* cada bloco ocupa no mínimo 300px */
+  max-width: 500px;
+}
+
+/* nav */
+nav {
+  background-color: rgba(157, 164, 165, 0.9);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 5px;
+}
+
+/* footer */
+footer {
+  background-color: rgb(0, 0, 0);
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 60px; /* espaço pro nav fixo */
+}
+
+footer p,
+.com {
+  color: rgb(113, 86, 86);
+}
+
+/* media query */
+@media screen and (max-width: 767px) {
+  .heading h1 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .heading h2 {
+    font-size: 1rem;
+  }
+
+  .two p {
+    margin: 18px 10px;
+    font-size: 14px;
+  }
+
+  nav a {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+/* Centraliza a seção RSVP */
+.second {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente (se tiver altura) */
+  text-align: center;      /* centraliza o texto */
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  background: #fff;        /* fundo branco */
+}
+
+.ok {
+  display: flex;
+  justify-content: center;
+}
+
+#appear, #gifts-button {
+  background-color: #fff;        /* fundo branco */
+  color: #040404;               /* cor do texto */
+  border: 2px solid #070707;    /* borda combinando */
+  padding: 12px 24px;           /* espaço interno */
+  border-radius: 30px;          /* bordas arredondadas */
+  font-size: 18px;              /* tamanho do texto */
+  font-weight: bold;            /* negrito */
+  cursor: pointer;              /* cursor de "mão" */
+  transition: all 0.3s ease;    /* animação suave */
+}
+
+/* efeito hover (quando passa o mouse) */
+#appear:hover, #gifts-button:hover {
+  background-color: #000000;
+  color: #fff;
+  transform: scale(1.05);       /* aumenta um pouquinho */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* se quiser estilizar no celular */
+@media (max-width: 768px) {
+  #appear {
+    width: 100%;    /* botão ocupa toda a largura */
+    font-size: 16px;
+  }
+}
+
+.gift-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.gift-btn {
+  background-color: #fff;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.gift-btn:hover {
+  background-color: #000000;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.pix {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #000000;
+  color: #fff;
+}
