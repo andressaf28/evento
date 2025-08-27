@@ -9,7 +9,7 @@
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      weddingDate = "10/11/2025";
+      weddingDate = "10/10/2025";
   
   today = mm + "/" + dd + "/" + yyyy;
   //end
