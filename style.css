@@ -30,6 +30,16 @@ p {
   width: 100%;
 }
 
+.allEvent {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+
+.div-espaco {
+  margin-bottom: 100px; /* espaço abaixo do div */
+}
+
 header {
   background: url("./images/cover.jpeg") no-repeat center center;
   background-size: cover;
